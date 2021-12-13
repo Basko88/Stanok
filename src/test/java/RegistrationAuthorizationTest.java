@@ -10,7 +10,7 @@ public class RegistrationAuthorizationTest {
     @Test
     public void RegistrationAuthorization() {
         System.setProperty("webdriver.chrome.driver",
-                "C:/Users/Xiaomi/OneDrive/Документы/QA/AutomatedTesting/IntelijIDE/Stanok/drivers/chromedriver");
+                "C:/Users/Xiaomi/OneDrive/Документы/QA/AutomatedTesting/IntelijIDE/Stanok/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -30,6 +30,7 @@ public class RegistrationAuthorizationTest {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(value);
     }
+
 
 }
 
